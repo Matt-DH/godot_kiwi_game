@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://c07lpvj8j2t6q"]
+
+[ext_resource type="Texture2D" uid="uid://bkl6gq0eplrbx" path="res://Assets/Player/Sprites/kiwi_walk1.png" id="1_owlpj"]
+[ext_resource type="Texture2D" uid="uid://c2wdtuqvepouk" path="res://Assets/Player/Sprites/kiwi_walk3.png" id="2_t7nmk"]
+[ext_resource type="Texture2D" uid="uid://dd8wvwnua4u33" path="res://Assets/Player/Sprites/kiwi_walk2.png" id="3_ls8f2"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_j7myh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5e4gr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_owlpj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_t7nmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ls8f2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_t7nmk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Animation" type="Node" parent="."]
+
+[node name="sprite_still" type="Sprite2D" parent="Animation"]
+texture = SubResource("ImageTexture_j7myh")
+
+[node name="sprite_dead" type="Sprite2D" parent="Animation"]
+
+[node name="animated_sprite_walk" type="AnimatedSprite2D" parent="Animation"]
+sprite_frames = SubResource("SpriteFrames_5e4gr")
+frame = 1
+frame_progress = 0.414001
+
+[node name="animated_sprite_jump" type="AnimatedSprite2D" parent="Animation"]
