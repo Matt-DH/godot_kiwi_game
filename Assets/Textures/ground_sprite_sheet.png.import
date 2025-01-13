@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://21yxvumssymq"
-path="res://.godot/imported/kiwi_still.png-6ef06ce9871828a98331bdfef37dde94.ctex"
+uid="uid://derkw0m6m7wcf"
+path="res://.godot/imported/ground_sprite_sheet.png-2bee30d95a785b89546afba73f62a2c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Sprites/kiwi_still.png"
-dest_files=["res://.godot/imported/kiwi_still.png-6ef06ce9871828a98331bdfef37dde94.ctex"]
+source_file="res://Assets/Textures/ground_sprite_sheet.png"
+dest_files=["res://.godot/imported/ground_sprite_sheet.png-2bee30d95a785b89546afba73f62a2c0.ctex"]
 
 [params]
 
